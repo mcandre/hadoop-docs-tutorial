@@ -4,6 +4,8 @@
 
 Here's a funny sort of Hello World for distributed Java programming with MapReduce. This Hadoop job performs a word count over the complete Sherlock Holmes, and displays the frequencies associated with `Watson`.
 
+# EXAMPLE
+
 ```
 $ tree sherlock-holmes/
 sherlock-holmes/
