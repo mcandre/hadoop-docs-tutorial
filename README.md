@@ -32,10 +32,7 @@ sherlock-holmes/
 $ make
 javac -classpath `hadoop classpath` WordCount.java
 jar cvfm WordCount.jar META-INF/MANIFEST.MF *.class
-added manifest
-adding: WordCount$Map.class(in = 1824) (out= 746)(deflated 59%)
-adding: WordCount$Reduce.class(in = 1591) (out= 643)(deflated 59%)
-adding: WordCount.class(in = 1516) (out= 741)(deflated 51%)
+...
 rm -rf wc/
 hadoop jar WordCount.jar sherlock-holmes/ wc/
 ...
