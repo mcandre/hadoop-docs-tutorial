@@ -48,6 +48,8 @@ This example is tested to successfully compile and run in Mac OS X, currently th
 
 ## Mac OS X
 
+Mac comes with JDK and `sh` by default. The remainder can be obtained thusly:
+
 1. Launch `App Store.app`, install [Xcode](https://developer.apple.com/xcode/).
 2. Launch `Xcode.app`, install the Xcode command line tools.
 3. Install [Homebrew](http://brew.sh/).
