@@ -101,11 +101,11 @@ Optionally, manually install `tree` - [good luck](http://lassauge.free.fr/cygwin
 
 Linux comes with `sh` by default. The remainder can be obtained thusly:
 
-1. Install `make` (e.g., `apt-get install build-essential`).
+1. Install `make`. In Ubuntu, this is done with `sudo apt-get install build-essential`).
 2. Manually install Oracle Java SE - [good luck](https://help.ubuntu.com/community/Java#Oracle_Java_7).
 3. Manually install Hadoop - [good luck](http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/).
 
-Optionally, install tree (`apt-get install tree`).
+Optionally, install tree (`sudo apt-get install tree`).
 
 ## Huh?
 
