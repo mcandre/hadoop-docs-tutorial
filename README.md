@@ -2,7 +2,9 @@
 
 # ABOUT
 
-There are many Hadoop tutorials and textbooks, but none of the code examples seem to actually compile and run. This minimal WordCount Hadoop job serves as a minimal example, a sort of Hello World for distributed programming in Hadoop, to help programmers get up and running. I learn by example, so I needed to write this and see it run in order to learn more about Hadoop.
+There are many Hadoop tutorials and textbooks, but none of the code examples seem to actually compile and run. This minimal WordCount Hadoop job serves as a minimal example, a sort of Hello World for distributed programming in Hadoop, to help programmers get up and running. I learn by example, so I needed to write this for myself and see the code actually run in order to start learning Hadoop.
+
+This code was successfully tested on Mac OS X, due to the relative difficulty of installing Hadoop on any other operating system. It's sad, really. No one wants to contribute Debian or Chocolatey packages for Hadoop, so installation is always a trial. Fortunately, some kind soul submitted a Homebrew formula, so Mac users can simply `brew install hadoop` and get real work done.
 
 # REQUIREMENTS
 
