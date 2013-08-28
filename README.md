@@ -70,7 +70,8 @@ jar cvfm WordCount.jar META-INF/MANIFEST.MF *.class
 hadoop jar WordCount.jar sherlock-holmes/ wc/
 ...
 13/08/28 11:34:17 INFO mapred.Task:  Using ResourceCalculatorPlugin : null
-13/08/28 11:34:17 INFO mapred.MapTask: Processing split: file:/Users/apennebaker/Desktop/src/hadoop-docs-tutorial/sherlock-holmes/rholm10.txt:0+627461
+13/08/28 11:34:17 INFO mapred.MapTask: Processing split:
+file:/Users/apennebaker/Desktop/src/hadoop-docs-tutorial/sherlock-holmes/rholm10.txt:0+627461
 13/08/28 11:34:17 INFO mapred.MapTask: numReduceTasks: 1
 13/08/28 11:34:17 INFO mapred.MapTask: io.sort.mb = 100
 13/08/28 11:34:17 INFO mapred.MapTask: data buffer = 79691776/99614720
@@ -85,7 +86,8 @@ Which stores the results in a Hadoop output directory.
 
 ```
 ...
-13/08/28 11:34:22 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local214141552_0001_r_000000_0' to file:/Users/apennebaker/Desktop/src/hadoop-docs-tutorial/wc
+13/08/28 11:34:22 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local214141552_0001_r_000000_0' to
+file:/Users/apennebaker/Desktop/src/hadoop-docs-tutorial/wc
 ...
 ```
 
