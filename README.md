@@ -9,6 +9,7 @@ https://hadoop.apache.org/docs/stable/mapred_tutorial.html#Source+Code
 # REQUIREMENTS
 
 * [Hadoop](http://hadoop.apache.org/)
+* `make`
 
 Mac users can `brew install hadoop`.
 
