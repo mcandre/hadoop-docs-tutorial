@@ -32,7 +32,7 @@ This code was successfully tested on Mac OS X, due to the relative difficulty of
 ## Linux
 
 1. Install `make` (e.g., `apt-get install build-essential`).
-2. Manually install Oracle Java - [good luck](https://help.ubuntu.com/community/Java#Oracle_Java_7).
+2. Manually install Oracle Java SE - [good luck](https://help.ubuntu.com/community/Java#Oracle_Java_7).
 3. Manually install Hadoop - [good luck](http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/).
 
 # EXAMPLE
