@@ -1,5 +1,3 @@
-package org.myord;
-
 import java.io.IOException;
 import java.util.*;
 
