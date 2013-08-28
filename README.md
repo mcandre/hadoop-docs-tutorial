@@ -6,12 +6,33 @@ There are many Hadoop tutorials and textbooks, but none of the code examples see
 
 # REQUIREMENTS
 
+* [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 * [Hadoop](http://hadoop.apache.org/)
 * `make`
-
-Mac users can `brew install hadoop` with [Homebrew](http://brew.sh/).
+* `sh`
 
 Ensure the `hadoop` script is in `$PATH` (`which hadoop`).
+
+## Mac OS X
+
+1. Launch `App Store.app`, install [Xcode](https://developer.apple.com/xcode/).
+2. Launch `Xcode.app`, install the Xcode command line tools.
+3. Install [Homebrew](http://brew.sh/).
+4. Launch `Terminal.app`, run `brew install hadoop`.
+
+## Windows
+
+1. Launch `cmd.exe`, install [Chocolatey](http://chocolatey.org/).
+2. Run `cinst StrawberryPerl`.
+3. Append Strawberry Perl's `make` to the Windows `%PATH%` environment variable.
+4. Run `cinst mingw` to install MinGW, which provides `sh.exe`.
+5. Manually install Hadoop - [good luck](http://alans.se/blog/2010/hadoop-hbase-cygwin-windows-7-x64/).
+
+## Ubuntu
+
+1. Install `make` (`sudo apt-get install build-essential`).
+2. Manually install [Oracle Java 7](https://help.ubuntu.com/community/Java#Oracle_Java_7).
+3. Manually install Hadoop - [good luck](http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/).
 
 # EXAMPLE
 
