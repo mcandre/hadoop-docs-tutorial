@@ -95,7 +95,7 @@ JDK, `sh`, `make`, and friends are best installed via Chocolatey:
 
 `cinst` and friends must be run from a bare Command Prompt, but `make`, `hadoop`, and friends must be run from a MinGW/Cygwin shell. Yes, it's terrible.
 
-Optionally, install `tree` - [good luck](http://lassauge.free.fr/cygwin/release/tree/).
+Optionally, manually install `tree` - [good luck](http://lassauge.free.fr/cygwin/release/tree/).
 
 ## Linux
 
