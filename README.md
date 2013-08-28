@@ -27,10 +27,10 @@ There are many Hadoop tutorials and textbooks, but none of the code examples see
 4. Run `cinst mingw` to install MinGW, which provides `sh.exe`.
 5. Manually install Hadoop - [good luck](http://alans.se/blog/2010/hadoop-hbase-cygwin-windows-7-x64/).
 
-## Ubuntu
+## Linux
 
-1. Install `make` (`sudo apt-get install build-essential`).
-2. Manually install [Oracle Java 7](https://help.ubuntu.com/community/Java#Oracle_Java_7).
+1. Install `make` (e.g., `apt-get install build-essential`).
+2. Manually install Oracle Java - [good luck](https://help.ubuntu.com/community/Java#Oracle_Java_7).
 3. Manually install Hadoop - [good luck](http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/).
 
 # EXAMPLE
