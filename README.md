@@ -50,24 +50,45 @@ This example is tested to successfully compile and run in Mac OS X, currently th
 
 Mac comes with JDK and `sh` by default. The remainder can be obtained thusly:
 
-1. Launch `App Store.app`, install [Xcode](https://developer.apple.com/xcode/).
+1. Install [Xcode](https://developer.apple.com/xcode/) via `App Store.app`.
 2. Launch `Xcode.app`, install the Xcode command line tools.
 3. Install [Homebrew](http://brew.sh/).
 4. Launch `Terminal.app`, run `brew install hadoop`.
 
 ## Windows
 
-1. Launch `cmd.exe`, install [Chocolatey](http://chocolatey.org/).
+JDK, `sh`, `make`, and friends are best installed via Chocolatey:
+
+1. Launch a Command Prompt (`cmd.exe`), install [Chocolatey](http://chocolatey.org/).
 2. Run `cinst StrawberryPerl`.
 3. Append Strawberry Perl's `make` directory to the Windows `%PATH%` environment variable.
-4. Run `cinst mingw` to install MinGW, which provides `sh.exe`.
-5. Manually install Hadoop - [good luck](http://alans.se/blog/2010/hadoop-hbase-cygwin-windows-7-x64/).
+4. Install the JDK with `cinst java.jdk`.
+5. Add the `javac.exe` directory to the Windows `%PATH` environment variable.
+6. Run `cinst mingw` to install MinGW, which provides `sh.exe`.
+7. Manually install Hadoop inside MinGW/Cygwin - [good luck](http://alans.se/blog/2010/hadoop-hbase-cygwin-windows-7-x64/).
+
+`cinst` and friends must be run from a bare Command Prompt, but `make`, `hadoop`, and friends must be run from a MinGW/Cygwin shell. Yes, it's terrible.
 
 ## Linux
+
+Linux comes with `sh` by default. The remainder can be obtained thusly:
 
 1. Install `make` (e.g., `apt-get install build-essential`).
 2. Manually install Oracle Java SE - [good luck](https://help.ubuntu.com/community/Java#Oracle_Java_7).
 3. Manually install Hadoop - [good luck](http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/).
+
+## Huh?
+
+Either `git clone https://github.com/mcandre/hadoop-docs-tutorial.git`, or manually download and extract the [ZIP](https://github.com/mcandre/hadoop-docs-tutorial/archive/master.zip)ball.
+
+10 Open a terminal, cd to the hadoop-docs-tutorial directory.
+20 Run `make`.
+30 Something will fail, hopefully with an error message.
+40 Use [Google](https://www.google.com/).
+50 Fix the error.
+60 GOTO 10
+
+Consider forking [hadoop-docs-tutorial](https://github.com/mcandre/hadoop-docs-tutorial) and amending the README to help other Hadoopers along the way.
 
 # CREDITS
 
