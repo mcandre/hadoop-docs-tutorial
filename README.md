@@ -10,8 +10,7 @@ There are many Hadoop tutorials and textbooks, but none of the code examples see
 * [Hadoop](http://hadoop.apache.org/)
 * `make`
 * `sh`
-
-Ensure the `hadoop` script is in `$PATH` (`which hadoop`).
+* Ensure the `hadoop` script is in `$PATH` (`which hadoop`).
 
 ## Mac OS X
 
@@ -39,7 +38,7 @@ Ensure the `hadoop` script is in `$PATH` (`which hadoop`).
 This Hadoop job performs a word count over the complete works of Arthur Conan Doyle, and displays the frequencies associated with `Watson`.
 
 ```
-$ make test
+$ make
 ...
 "Watson 3
 "Watson,    19
