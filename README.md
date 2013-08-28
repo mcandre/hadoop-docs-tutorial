@@ -2,20 +2,20 @@
 
 # ABOUT
 
-Following the official Hadoop MapReduce Tutorial.
-
-https://hadoop.apache.org/docs/stable/mapred_tutorial.html#Source+Code
+There are many Hadoop tutorials and textbooks, but none of the code examples seem to actually compile and run. This minimal WordCount Hadoop job serves as a minimal example, a sort of Hello World for distributed programming in Hadoop, to help programmers get up and running. I learn by example, so I needed to write this and see it run in order to learn more about Hadoop.
 
 # REQUIREMENTS
 
 * [Hadoop](http://hadoop.apache.org/)
 * `make`
 
-Mac users can `brew install hadoop`.
+Mac users can `brew install hadoop` with [Homebrew](http://brew.sh/).
 
 Then set the `$HADOOP_PREFIX` and `$HADOOP_VERSION` environment variables.
 
 # EXAMPLE
+
+This Hadoop job performs a word count over the complete works of Arthur Conan Doyle, and displays the frequencies associated with `Watson`.
 
 ```
 $ make test
@@ -48,3 +48,7 @@ Watson? 36
 Watson?"    100
 Watson?,    1
 ```
+
+# CREDITS
+
+* [Apache MapReduce Tutorial](https://hadoop.apache.org/docs/stable/mapred_tutorial.html#Source+Code) - Source code for `WordCount.java`
