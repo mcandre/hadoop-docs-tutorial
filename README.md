@@ -86,7 +86,8 @@ Which stores the results in a Hadoop output directory.
 
 ```
 ...
-13/08/28 11:34:22 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local214141552_0001_r_000000_0' to
+13/08/28 11:34:22 INFO mapred.FileOutputCommitter: Saved output of task
+'attempt_local214141552_0001_r_000000_0' to
 file:/Users/apennebaker/Desktop/src/hadoop-docs-tutorial/wc
 ...
 ```
