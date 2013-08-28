@@ -33,7 +33,6 @@ $ make
 javac -classpath `hadoop classpath` WordCount.java
 jar cvfm WordCount.jar META-INF/MANIFEST.MF *.class
 ...
-rm -rf wc/
 hadoop jar WordCount.jar sherlock-holmes/ wc/
 ...
 13/08/28 11:34:17 INFO mapred.Task:  Using ResourceCalculatorPlugin : null
