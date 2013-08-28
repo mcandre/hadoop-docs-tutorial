@@ -1,10 +1,9 @@
 all: test
 
-test: WordCount
+test: wordcountjob
 	grep Watson wc/part-00000
 
-WordCount: WordCount.jar
-	-rm -rf wc/
+wordcountjob: WordCount.jar cleanoutput
 	hadoop jar WordCount.jar authors/ wc/
 
 WordCount.jar: WordCount.class
@@ -13,7 +12,9 @@ WordCount.jar: WordCount.class
 WordCount.class: WordCount.java
 	javac -classpath `hadoop classpath` WordCount.java
 
-clean:
+clean: cleanoutput
 	-rm *.jar
 	-rm *.class
+
+cleanoutput:
 	-rm -rf wc/
