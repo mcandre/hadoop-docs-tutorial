@@ -10,7 +10,7 @@ There are many Hadoop tutorials and textbooks, but none of the code examples see
 * [Hadoop](http://hadoop.apache.org/)
 * `make`
 * `sh`
-* Ensure the `hadoop` script is in `$PATH` (`which hadoop`).
+* Ensure the `hadoop` script is in `$PATH` (test with `which hadoop`).
 
 ## Mac OS X
 
@@ -23,7 +23,7 @@ There are many Hadoop tutorials and textbooks, but none of the code examples see
 
 1. Launch `cmd.exe`, install [Chocolatey](http://chocolatey.org/).
 2. Run `cinst StrawberryPerl`.
-3. Append Strawberry Perl's `make` to the Windows `%PATH%` environment variable.
+3. Append Strawberry Perl's `make` directory to the Windows `%PATH%` environment variable.
 4. Run `cinst mingw` to install MinGW, which provides `sh.exe`.
 5. Manually install Hadoop - [good luck](http://alans.se/blog/2010/hadoop-hbase-cygwin-windows-7-x64/).
 
