@@ -1,12 +1,12 @@
-all: test
+all: joke
 
-test: wordcountjob
+joke: job
 	grep Watson wc/part-00000
 
-wordcountjob: WordCount.jar cleanoutput
+job: jar cleanoutput
 	hadoop jar WordCount.jar sherlock-holmes/ wc/
 
-WordCount.jar: WordCount.class
+jar: WordCount.class
 	jar cvfm WordCount.jar META-INF/MANIFEST.MF *.class
 
 WordCount.class: WordCount.java

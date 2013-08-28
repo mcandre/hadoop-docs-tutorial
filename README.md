@@ -58,7 +58,46 @@ public class WordCount {
 
 ```
 $ make
+javac -classpath `hadoop classpath` WordCount.java
+jar cvfm WordCount.jar META-INF/MANIFEST.MF *.class
+added manifest
+adding: WordCount$Map.class(in = 1824) (out= 746)(deflated 59%)
+adding: WordCount$Reduce.class(in = 1591) (out= 643)(deflated 59%)
+adding: WordCount.class(in = 1516) (out= 741)(deflated 51%)
+rm -rf wc/
+hadoop jar WordCount.jar sherlock-holmes/ wc/
+2013-08-28 11:34:16.509 java[61339:1203] Unable to load realm info from SCDynamicStore
+13/08/28 11:34:16 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+13/08/28 11:34:16 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+13/08/28 11:34:16 WARN snappy.LoadSnappy: Snappy native library not loaded
+13/08/28 11:34:16 INFO mapred.FileInputFormat: Total input paths to process : 50
+13/08/28 11:34:16 INFO mapred.JobClient: Running job: job_local214141552_0001
+13/08/28 11:34:16 INFO mapred.LocalJobRunner: Waiting for map tasks
+13/08/28 11:34:16 INFO mapred.LocalJobRunner: Starting task: attempt_local214141552_0001_m_000000_0
+13/08/28 11:34:16 INFO mapred.Task:  Using ResourceCalculatorPlugin : null
+13/08/28 11:34:16 INFO mapred.MapTask: Processing split: file:/Users/apennebaker/Desktop/src/hadoop-docs-tutorial/sherlock-holmes/rholm11b.txt:0+642289
+13/08/28 11:34:16 INFO mapred.MapTask: numReduceTasks: 1
+13/08/28 11:34:16 INFO mapred.MapTask: io.sort.mb = 100
+13/08/28 11:34:16 INFO mapred.MapTask: data buffer = 79691776/99614720
+13/08/28 11:34:16 INFO mapred.MapTask: record buffer = 262144/327680
+13/08/28 11:34:17 INFO mapred.MapTask: Starting flush of map output
+13/08/28 11:34:17 INFO mapred.MapTask: Finished spill 0
+13/08/28 11:34:17 INFO mapred.Task: Task:attempt_local214141552_0001_m_000000_0 is done. And is in the process of commiting
+13/08/28 11:34:17 INFO mapred.LocalJobRunner: file:/Users/apennebaker/Desktop/src/hadoop-docs-tutorial/sherlock-holmes/rholm11b.txt:0+642289
+13/08/28 11:34:17 INFO mapred.Task: Task 'attempt_local214141552_0001_m_000000_0' done.
+13/08/28 11:34:17 INFO mapred.LocalJobRunner: Finishing task: attempt_local214141552_0001_m_000000_0
+13/08/28 11:34:17 INFO mapred.LocalJobRunner: Starting task: attempt_local214141552_0001_m_000001_0
+13/08/28 11:34:17 INFO mapred.Task:  Using ResourceCalculatorPlugin : null
+13/08/28 11:34:17 INFO mapred.MapTask: Processing split: file:/Users/apennebaker/Desktop/src/hadoop-docs-tutorial/sherlock-holmes/rholm10.txt:0+627461
+13/08/28 11:34:17 INFO mapred.MapTask: numReduceTasks: 1
+13/08/28 11:34:17 INFO mapred.MapTask: io.sort.mb = 100
+13/08/28 11:34:17 INFO mapred.MapTask: data buffer = 79691776/99614720
+13/08/28 11:34:17 INFO mapred.MapTask: record buffer = 262144/327680
+13/08/28 11:34:17 INFO mapred.MapTask: Starting flush of map output
+13/08/28 11:34:17 INFO mapred.MapTask: Finished spill 0
+13/08/28 11:34:17 INFO mapred.Task: Task:attempt_local214141552_0001_m_000001_0 is done. And is in the process of commiting
 ...
+grep Watson wc/part-00000
 "Watson 3
 "Watson,    19
 "Watson,"   4
