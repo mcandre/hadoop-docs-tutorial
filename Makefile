@@ -4,7 +4,7 @@ test: wordcountjob
 	grep Watson wc/part-00000
 
 wordcountjob: WordCount.jar cleanoutput
-	hadoop jar WordCount.jar authors/ wc/
+	hadoop jar WordCount.jar sherlock-holmes/ wc/
 
 WordCount.jar: WordCount.class
 	jar cvfm WordCount.jar META-INF/MANIFEST.MF *.class

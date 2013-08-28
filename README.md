@@ -5,6 +5,26 @@
 Here's a funny sort of Hello World for distributed Java programming with MapReduce. This Hadoop job performs a word count over the complete Sherlock Holmes, and displays the frequencies associated with `Watson`.
 
 ```
+$ tree sherlock-holmes/
+sherlock-holmes/
+├── agrange.txt
+├── b-p_plan.txt
+├── bascombe.txt
+├── beryl.txt
+├── blanced.txt
+├── blkpeter.txt
+├── bluecar.txt
+├── cardbox.txt
+├── caseide.txt
+├── charles.txt
+├── copper.txt
+├── creeping.txt
+├── crookman.txt
+├── danceman.txt
+├── devilsf.txt
+├── doyle-adventures-380.txt
+...
+
 $ make
 ...
 "Watson 3
@@ -46,6 +66,10 @@ This example is tested to successfully compile and run in Mac OS X, currently th
 * `sh`
 * Ensure the `hadoop` script is in `$PATH` (test with `which hadoop`).
 
+## Optional
+
+* `tree`
+
 ## Mac OS X
 
 Mac comes with JDK and `sh` by default. The remainder can be obtained thusly:
@@ -54,6 +78,8 @@ Mac comes with JDK and `sh` by default. The remainder can be obtained thusly:
 2. Launch `Xcode.app`, install the Xcode command line tools.
 3. Install [Homebrew](http://brew.sh/).
 4. Launch `Terminal.app`, run `brew install hadoop`.
+
+Optionally, run `brew install tree`.
 
 ## Windows
 
@@ -69,6 +95,8 @@ JDK, `sh`, `make`, and friends are best installed via Chocolatey:
 
 `cinst` and friends must be run from a bare Command Prompt, but `make`, `hadoop`, and friends must be run from a MinGW/Cygwin shell. Yes, it's terrible.
 
+Optionally, install `tree` - [good luck](http://lassauge.free.fr/cygwin/release/tree/).
+
 ## Linux
 
 Linux comes with `sh` by default. The remainder can be obtained thusly:
@@ -76,6 +104,8 @@ Linux comes with `sh` by default. The remainder can be obtained thusly:
 1. Install `make` (e.g., `apt-get install build-essential`).
 2. Manually install Oracle Java SE - [good luck](https://help.ubuntu.com/community/Java#Oracle_Java_7).
 3. Manually install Hadoop - [good luck](http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/).
+
+Optionally, install tree (`apt-get install tree`).
 
 ## Huh?
 
