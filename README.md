@@ -1,4 +1,4 @@
-# hadoop-docs-tutorial - WordCount example
+# hadoop-docs-tutorial - distributed wc
 
 # ABOUT
 
