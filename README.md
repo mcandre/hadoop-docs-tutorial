@@ -10,6 +10,10 @@ https://hadoop.apache.org/docs/stable/mapred_tutorial.html#Source+Code
 
 * [Hadoop](http://hadoop.apache.org/)
 
+Mac users can `brew install hadoop`.
+
+Then set the `$HADOOP_PREFIX` and `$HADOOP_VERSION` environment variables.
+
 # EXAMPLE
 
 ```
