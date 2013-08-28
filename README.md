@@ -180,7 +180,7 @@ Optionally, install tree (`sudo apt-get install tree`).
 
 Either `git clone https://github.com/mcandre/hadoop-docs-tutorial.git`, or manually download and extract the [ZIP](https://github.com/mcandre/hadoop-docs-tutorial/archive/master.zip)ball.
 
-`hand-holding.beep`:
+### Hand Holding
 
 ```
 BEEP BOOP BEEP
