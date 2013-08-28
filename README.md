@@ -2,7 +2,7 @@
 
 # ABOUT
 
-This Hadoop job performs a word count over the complete Sherlock Holmes, and displays the frequencies associated with `Watson`. It acts as a funny sort of Hello World for distributed Java programming.
+Here's a funny sort of Hello World for distributed Java programming with MapReduce. This Hadoop job performs a word count over the complete Sherlock Holmes, and displays the frequencies associated with `Watson`.
 
 ```
 $ make
