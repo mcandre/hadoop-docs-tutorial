@@ -1,4 +1,4 @@
-# hadoop-docs-tutorial
+# hadoop-docs-tutorial - WordCount example
 
 # ABOUT
 
