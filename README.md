@@ -11,7 +11,7 @@ There are many Hadoop tutorials and textbooks, but none of the code examples see
 
 Mac users can `brew install hadoop` with [Homebrew](http://brew.sh/).
 
-Then set the `$HADOOP_PREFIX` and `$HADOOP_VERSION` environment variables.
+Ensure the `hadoop` script is in `$PATH` (`which hadoop`).
 
 # EXAMPLE
 
