@@ -65,7 +65,7 @@ We compile and run the job,
 ```
 $ make
 javac -classpath `hadoop classpath` WordCount.java
-jar cvfm WordCount.jar META-INF/MANIFEST.MF *.class
+jar cvfe WordCount.jar WordCount *.class
 ...
 hadoop jar WordCount.jar sherlock-holmes/ wc/
 ...

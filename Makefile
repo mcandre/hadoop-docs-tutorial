@@ -7,7 +7,7 @@ job: jar cleanoutput
 	hadoop jar WordCount.jar sherlock-holmes/ wc/
 
 jar: WordCount.class
-	jar cvfm WordCount.jar META-INF/MANIFEST.MF *.class
+	jar cvfe WordCount.jar WordCount *.class
 
 WordCount.class: WordCount.java
 	javac -classpath `hadoop classpath` WordCount.java
