@@ -180,19 +180,6 @@ Optionally, install tree (`sudo apt-get install tree`).
 
 Either `git clone https://github.com/mcandre/hadoop-docs-tutorial.git`, or manually download and extract the [ZIP](https://github.com/mcandre/hadoop-docs-tutorial/archive/master.zip)ball.
 
-### Hand Holding
-
-```
-BEEP BOOP BEEP
-10 Open a terminal, `cd` to the hadoop-docs-tutorial directory.
-20 Run `make`.
-30 Something will fail, hopefully with an error message.
-40 Use Google to resolve the error.
-50 Fix the error.
-60 GOTO 10
-END BEEP BOOP BEEP
-```
-
 Consider forking [hadoop-docs-tutorial](https://github.com/mcandre/hadoop-docs-tutorial) and amending the README to help other Hadoopers along the way.
 
 # CREDITS
