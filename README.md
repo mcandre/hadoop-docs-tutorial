@@ -138,6 +138,10 @@ This example is tested to successfully compile and run in Mac OS X, currently th
 ## Optional
 
 * `tree`
+* [Ruby](https://www.ruby-lang.org/) 1.9+
+* [Guard](http://guardgem.org/) 1.8.2+
+
+Use `bundle` to install Guard.
 
 ## Mac OS X
 
