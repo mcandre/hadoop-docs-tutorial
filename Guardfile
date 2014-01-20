@@ -1,5 +1,5 @@
 guard :shell do
-  watch(/.+\.java/) do |m|
+  watch(/^Makefile|.*\.java$/) do |m|
     title = 'Compile'
     eager 'make'
     status = ($?.success? && :success) || :failed
