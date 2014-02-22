@@ -1,4 +1,3 @@
-*.class
-*.jar
+target/
 wc/
 Gemfile.lock
