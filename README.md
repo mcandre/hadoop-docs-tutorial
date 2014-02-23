@@ -2,7 +2,7 @@
 
 # ABOUT
 
-Here's a funny sort of Hello World for distributed Java programming with MapReduce. This Hadoop job performs a word count over the complete Sherlock Holmes, and displays the frequencies associated with `Watson`.
+Here's a funny sort of Hello World for distributed Java programming with MapReduce. This Hadoop job performs a word count over the complete Sherlock Holmes, and displays the number of occurences of the word `Watson`.
 
 # EXAMPLE
 
