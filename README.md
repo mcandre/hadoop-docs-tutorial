@@ -201,3 +201,7 @@ Consider forking [hadoop-docs-tutorial](https://github.com/mcandre/hadoop-docs-t
 # CREDITS
 
 * [Apache MapReduce Tutorial](https://hadoop.apache.org/docs/stable/mapred_tutorial.html#Source+Code) - Source code for `WordCount.java`
+
+# Git Hooks
+
+See `hooks/`.
