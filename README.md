@@ -139,7 +139,7 @@ This example is tested to successfully compile and run in Mac OS X, currently th
 
 # REQUIREMENTS
 
-* [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 6+
+* [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 1.7+
 * [Gradle](http://gradle.org/) 2.1+
 * [Hadoop](http://hadoop.apache.org/) 1.2.1+
 * `make`
