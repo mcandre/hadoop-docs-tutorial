@@ -77,7 +77,7 @@ We compile and run the job,
 
 ```
 $ gradle build
-$ hadoop jar target/hadoop-docs-tutorial-0.0.0.jar us.yellosoft.hadoop.docs.tutorial.WordCount resources/sherlock-holmes/ wc/
+$ hadoop jar build/libs/hadoop-docs-tutorial.jar us.yellosoft.hadoop.docs.tutorial.WordCount resources/sherlock-holmes/ wc/
 ...
 13/08/28 11:34:17 INFO mapred.Task:  Using ResourceCalculatorPlugin : null
 13/08/28 11:34:17 INFO mapred.MapTask: Processing split:
