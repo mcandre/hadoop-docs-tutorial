@@ -76,7 +76,7 @@ public class WordCount {
 We compile and run the job,
 
 ```
-$ mvn package
+$ gradle build
 $ hadoop jar target/hadoop-docs-tutorial-0.0.0.jar us.yellosoft.hadoop.docs.tutorial.WordCount resources/sherlock-holmes/ wc/
 ...
 13/08/28 11:34:17 INFO mapred.Task:  Using ResourceCalculatorPlugin : null
@@ -140,8 +140,8 @@ This example is tested to successfully compile and run in Mac OS X, currently th
 # REQUIREMENTS
 
 * [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 6+
-* [Maven](http://maven.apache.org/) 3+
-* [Hadoop](http://hadoop.apache.org/) 1.2.1
+* [Gradle](http://gradle.org/) 2.1+
+* [Hadoop](http://hadoop.apache.org/) 1.2.1+
 * `make`
 * `sh`
 * Ensure the `hadoop` script is in `$PATH` (test with `which hadoop`).

@@ -20,23 +20,53 @@ import java.util.Iterator;
 import java.util.StringTokenizer;
 import java.io.IOException;
 
-public class WordCount {
+/** Hadoop word frequency counter */
+public final class WordCount {
+  /** Utility class */
+  private WordCount() {}
+
+  /** Word mapper */
   public static class Map extends MapReduceBase implements Mapper<LongWritable, Text, Text, IntWritable> {
-    private final static IntWritable one = new IntWritable(1);
+    private static final IntWritable ONE = new IntWritable(1);
 
-    public void map(LongWritable key, Text value, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
-      String line = value.toString();
+    /** Split text into words
+        @param key (unused)
+        @param value the text to split
+        @param output word emitter
+        @param reporter (unused)
+        @throws IOException on IO error
+     */
+    public void map(
+      final LongWritable key,
+      final Text value,
+      final OutputCollector<Text, IntWritable> output,
+      final Reporter reporter
+    ) throws IOException {
+      final String line = value.toString();
 
-      StringTokenizer tokenizer = new StringTokenizer(line);
+      final StringTokenizer tokenizer = new StringTokenizer(line);
 
       while (tokenizer.hasMoreTokens()) {
-        output.collect(new Text(tokenizer.nextToken()), one);
+        output.collect(new Text(tokenizer.nextToken()), ONE);
       }
     }
   }
 
+  /** Word frequency aggregator */
   public static class Reduce extends MapReduceBase implements Reducer<Text, IntWritable, Text, IntWritable> {
-    public void reduce(Text key, Iterator<IntWritable> values, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
+    /** Aggregate word frequencies
+        @param key (unused)
+        @param values frequency subtotals
+        @param output frequency emitter
+        @param reporter (unused)
+        @throws IOException on IO error
+     */
+    public void reduce(
+      final Text key,
+      final Iterator<IntWritable> values,
+      final OutputCollector<Text, IntWritable> output,
+      final Reporter reporter
+    ) throws IOException {
       int sum = 0;
 
       while (values.hasNext()) {
@@ -47,8 +77,12 @@ public class WordCount {
     }
   }
 
-  public static void main(String[] args) throws Exception {
-    JobConf conf = new JobConf(WordCount.class);
+  /** CLI entry point
+      @param args CLI flags
+      @throws Exception on error
+   */
+  public static void main(final String[] args) throws Exception {
+    final JobConf conf = new JobConf(WordCount.class);
     conf.setJobName("wordcount");
 
     conf.setOutputKeyClass(Text.class);
