@@ -36,6 +36,7 @@ public final class WordCount {
         @param reporter (unused)
         @throws IOException on IO error
      */
+    @Override
     public void map(
       final LongWritable key,
       final Text value,
@@ -61,6 +62,7 @@ public final class WordCount {
         @param reporter (unused)
         @throws IOException on IO error
      */
+    @Override
     public void reduce(
       final Text key,
       final Iterator<IntWritable> values,
