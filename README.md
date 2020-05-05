@@ -142,7 +142,7 @@ This example is tested to successfully compile and run in Mac OS X, currently th
 * [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 1.7+
 * [Gradle](http://gradle.org/) 2.1+
 * [Hadoop](http://hadoop.apache.org/) 1.2.1+
-* `make`
+* [rake](https://rubygems.org/gems/rake)
 * `sh`
 * Ensure the `hadoop` script is in `$PATH` (test with `which hadoop`).
 
@@ -170,17 +170,15 @@ Optionally, run `brew install tree sonar sonar-runner`.
 
 ## Windows
 
-JDK, `sh`, `make`, and friends are best installed via Chocolatey:
+JDK, `sh`, and friends are best installed via Chocolatey:
 
 1. Launch a Command Prompt (`cmd.exe`), install [Chocolatey](http://chocolatey.org/).
-2. Run `cinst StrawberryPerl`.
-3. Append Strawberry Perl's `make` directory to the Windows `%PATH%` environment variable.
-4. Install the JDK with `cinst java.jdk`.
-5. Add the `javac.exe` directory to the Windows `%PATH` environment variable.
-6. Run `cinst mingw` to install MinGW, which provides `sh.exe`.
-7. Manually install Hadoop inside MinGW/Cygwin - [good luck](http://alans.se/blog/2010/hadoop-hbase-cygwin-windows-7-x64/).
+2. Install the JDK with `cinst java.jdk`.
+3. Add the `javac.exe` directory to the Windows `%PATH` environment variable.
+4. Run `cinst mingw` to install MinGW, which provides `sh.exe`.
+5. Manually install Hadoop inside MinGW/Cygwin - [good luck](http://alans.se/blog/2010/hadoop-hbase-cygwin-windows-7-x64/).
 
-`cinst` and friends must be run from a bare Command Prompt, but `make`, `hadoop`, and friends must be run from a MinGW/Cygwin shell. Yes, it's terrible.
+`cinst` and friends must be run from a bare Command Prompt, but `hadoop`, and friends must be run from a MinGW/Cygwin shell. Yes, it's terrible.
 
 Optionally, manually install `tree` - [good luck](http://lassauge.free.fr/cygwin/release/tree/).
 
@@ -188,9 +186,8 @@ Optionally, manually install `tree` - [good luck](http://lassauge.free.fr/cygwin
 
 Linux comes with `sh` and `grep` by default. The remainder can be obtained thusly:
 
-1. Install `make`. In Ubuntu, this is done with `sudo apt-get install build-essential`).
-2. Manually install Oracle Java SE - [good luck](https://help.ubuntu.com/community/Java#Oracle_Java_7).
-3. Manually install Hadoop - [good luck](http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/).
+1. Manually install Oracle Java SE - [good luck](https://help.ubuntu.com/community/Java#Oracle_Java_7).
+2. Manually install Hadoop - [good luck](http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/).
 
 Optionally, install tree (`sudo apt-get install tree`).
 
